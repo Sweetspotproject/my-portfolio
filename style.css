@@ -1,0 +1,56 @@
+header {
+  padding: 20px;
+}
+
+img {
+  width: 100px;
+}
+
+.inicio {
+  width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 22px;
+}
+
+nav a {
+  text-transform: initial;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+nav a:hover {
+  color: crimson;
+}
+
+.content {
+  margin: 20px;
+  padding: 50px;
+  position: relative;
+  display: block;
+  text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 40px;
+}
+
+.copyright{
+    color: black;
+    font-size: 13px;
+}
