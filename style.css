@@ -7,6 +7,8 @@
 }
 
 body {
+  background-color: rgb(31, 31, 31);
+  color: #ffffff;
   font-family: "Poppins", sans-serif;
 }
 
@@ -14,7 +16,8 @@ header {
   padding: 20px;
 }
 
-img {
+#skull {
+  filter: invert(100%);
   width: 100px;
 }
 
@@ -47,11 +50,12 @@ nav li {
 }
 
 nav a {
+  color: #ffffff;
+  text-decoration: none;
   text-transform: initial;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-decoration: none;
-  color: black;
   font-weight: bold;
   font-size: 22px;
 }
@@ -68,12 +72,38 @@ nav a:hover {
   text-align: center;
 }
 
+#galery{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.galery{
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+
+.galery img{
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .3;
+  filter: saturate(1%);
+  transition: .6s ease;
+}
+
+.galery img:hover{
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
 footer {
   text-align: center;
   padding: 40px;
 }
 
 .copyright {
-  color: black;
   font-size: 13px;
 }
